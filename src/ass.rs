@@ -359,7 +359,7 @@ impl SpanSet {
 
         while line <= end_line {
             if last_b == linespan.char_st {
-                out.push_str(&format!(" {:3.}  ", line));
+                out.push_str(&format!(" {:3}  ", line));
             }
 
             if cur > spans.len() || last_b < curspan.char_st {
